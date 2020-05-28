@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.app.integration.TodoClient;
-import com.example.app.vo.TodoVO;
+import com.example.app.client.TodoClient;
+import com.example.app.dto.TodoDto;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -18,7 +18,7 @@ public class TodoController {
 	TodoClient todoClient;
 	
 	@GetMapping("/todos")
-	public List<TodoVO> getTodos() {
+	public List<TodoDto> getTodos() {
 		return todoClient.getTodos();
 	}
 }

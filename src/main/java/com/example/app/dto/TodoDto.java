@@ -1,6 +1,6 @@
-package com.example.app.vo;
+package com.example.app.dto;
 
-public class TodoVO {
+public class TodoDto {
 	
 	private String userId;
 	private int id;
